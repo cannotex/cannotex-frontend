@@ -7,9 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 import UploadButton from './UploadButton.jsx';
-import UpButton from './UpButton.jsx';
+// import UpButton from './UpButton.jsx';
 
-const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles(theme => ({
     grow: {
       flexGrow: 1,
     },
@@ -93,7 +93,6 @@ export default function AppNavbar () {
             </div>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <UpButton />
             </div>
           </Toolbar>
         </AppBar>

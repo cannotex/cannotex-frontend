@@ -9,6 +9,7 @@ import { connect } from "react-redux";
 import { postImage } from "../actions/imageActions";
 import Modal from "@material-ui/core/Modal";
 import Button from "@material-ui/core/Button";
+import { useStyles } from "./AppNavbar.jsx";
 
 const styles = theme => ({
   paper: {
@@ -45,6 +46,7 @@ class UploadButton extends Component {
         }
     }
     const { open } = this.state;
+    const classes = useStyles();
     return (
       <div className={classes.root}>
         <input
